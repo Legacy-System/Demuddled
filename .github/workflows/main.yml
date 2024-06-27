@@ -34,7 +34,7 @@ jobs:
         uses: demonnic/build-with-muddler@main
         with:
           muddlerVersion: "LATEST"
-          workingDir: ./Legacy UI V2.0 # optional, default is ${{ github.workspace }}
+          workingDir: ./Legacy\ UI\ V2.0 # optional, default is ${{ github.workspace }}
       
       - name: Upload Legacy UI Artifact
         uses: actions/upload-artifact@v3.1.2
@@ -51,7 +51,7 @@ jobs:
         uses: demonnic/build-with-muddler@main
         with:
           muddlerVersion: "LATEST"
-          workingDir: ./Legacy V2.0 # optional, default is ${{ github.workspace }}
+          workingDir: ./Legacy\ V2.0 # optional, default is ${{ github.workspace }}
       
       - name: Upload Legacy V2 Artifact
         uses: actions/upload-artifact@v3.1.2
