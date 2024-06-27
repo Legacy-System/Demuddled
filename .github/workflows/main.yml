@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-basher:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
         with:
           name: MuddledLegacyBasher
           path: ./Basher/build/tmp/
-  build:
+  build-ui:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,7 +41,7 @@ jobs:
         with:
           name: MuddledLegacyUI
           path: ./Legacy UI V2.0/build/tmp/
-  build:
+  build-legacy:
     runs-on: ubuntu-latest
 
     steps:
@@ -58,7 +58,7 @@ jobs:
         with:
           name: MuddledLegacyUI
           path: ./Legacy V2.0/build/tmp/
-  build:
+  build-trades:
     runs-on: ubuntu-latest
 
     steps:
