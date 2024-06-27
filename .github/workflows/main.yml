@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: MuddledLegacyUI
-          path: ./Legacy UI V2.0/build/tmp/
+          path: ./Legacy\ UI\ V2.0/build/tmp/
   build-legacy:
     runs-on: ubuntu-latest
 
@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: MuddledLegacyUI
-          path: ./Legacy V2.0/build/tmp/
+          path: ./Legacy\ V2.0/build/tmp/
   build-trades:
     runs-on: ubuntu-latest
 
