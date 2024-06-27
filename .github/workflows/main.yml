@@ -1,0 +1,78 @@
+name: Build packages using muddler and upload artifact
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3.3.0
+
+      - name: Muddle Basher
+        uses: demonnic/build-with-muddler@main
+        with:
+          muddlerVersion: "LATEST"
+          workingDir: ./Basher # optional, default is ${{ github.workspace }}
+      
+      - name: Upload Basher Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: MuddledLegacyBasher
+          path: ./Basher/build/tmp/
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3.3.0
+
+      - name: Muddle Legacy UI
+        uses: demonnic/build-with-muddler@main
+        with:
+          muddlerVersion: "LATEST"
+          workingDir: ./Legacy UI V2.0 # optional, default is ${{ github.workspace }}
+      
+      - name: Upload Legacy UI Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: MuddledLegacyUI
+          path: ./Legacy UI V2.0/build/tmp/
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3.3.0
+
+      - name: Muddle Legacy V2
+        uses: demonnic/build-with-muddler@main
+        with:
+          muddlerVersion: "LATEST"
+          workingDir: ./Legacy V2.0 # optional, default is ${{ github.workspace }}
+      
+      - name: Upload Legacy V2 Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: MuddledLegacyUI
+          path: ./Legacy V2.0/build/tmp/
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3.3.0
+
+      - name: Muddle Trades
+        uses: demonnic/build-with-muddler@main
+        with:
+          muddlerVersion: "LATEST"
+          workingDir: ./Trades # optional, default is ${{ github.workspace }}
+      
+      - name: Upload Trades Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: MuddledLegacyUI
+          path: ./Trades/build/tmp/
+          
