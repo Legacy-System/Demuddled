@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-basher:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
         with:
           name: MuddledLegacyBasher
           path: ./Basher/build/tmp/
-  build:
+  build-ui:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,14 +34,14 @@ jobs:
         uses: demonnic/build-with-muddler@main
         with:
           muddlerVersion: "LATEST"
-          workingDir: ./Legacy UI V2.0 # optional, default is ${{ github.workspace }}
+          workingDir: ./Legacy\ UI\ V2.0 # optional, default is ${{ github.workspace }}
       
       - name: Upload Legacy UI Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: MuddledLegacyUI
-          path: ./Legacy UI V2.0/build/tmp/
-  build:
+          path: ./Legacy\ UI\ V2.0/build/tmp/
+  build-legacy:
     runs-on: ubuntu-latest
 
     steps:
@@ -51,14 +51,14 @@ jobs:
         uses: demonnic/build-with-muddler@main
         with:
           muddlerVersion: "LATEST"
-          workingDir: ./Legacy V2.0 # optional, default is ${{ github.workspace }}
+          workingDir: ./Legacy\ V2.0 # optional, default is ${{ github.workspace }}
       
       - name: Upload Legacy V2 Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: MuddledLegacyUI
-          path: ./Legacy V2.0/build/tmp/
-  build:
+          name: MuddledLegacy
+          path: ./Legacy\ V2.0/build/tmp/
+  build-trades:
     runs-on: ubuntu-latest
 
     steps:
@@ -73,6 +73,6 @@ jobs:
       - name: Upload Trades Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: MuddledLegacyUI
+          name: MuddledLegacyTrades
           path: ./Trades/build/tmp/
           
