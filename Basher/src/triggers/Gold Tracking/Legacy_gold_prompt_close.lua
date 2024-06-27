@@ -1,0 +1,1 @@
+setTriggerStayOpen("Legacy gold drop", 0)

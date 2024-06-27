@@ -1,0 +1,9 @@
+[
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Change border color",
+              "regex": "^bcolor\\s(.+)$",
+              "script": ""
+       }
+]

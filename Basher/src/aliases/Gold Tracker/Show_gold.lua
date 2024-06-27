@@ -1,0 +1,1 @@
+Legacy.echo("<gold>"..math.reint(Legacy.Settings.Basher.Gold).."<white> gold tracked!")

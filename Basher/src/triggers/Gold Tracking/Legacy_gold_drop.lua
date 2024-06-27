@@ -1,0 +1,1 @@
+--get gold trigger and put away in pack. May need more gold detection lines or more robust detection line

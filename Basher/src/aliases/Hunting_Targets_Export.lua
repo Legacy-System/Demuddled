@@ -1,0 +1,2 @@
+table.save(getMudletHomeDir().."/Legacy/Downloads/BasherTargets.lua", Legacy.Basher.Targets)
+Legacy.echo("Exported your hunting targets to: \n<gold>"..getMudletHomeDir().."/Legacy/Downloads/BasherTargets.lua")

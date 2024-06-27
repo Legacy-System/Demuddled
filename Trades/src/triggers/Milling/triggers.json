@@ -1,0 +1,134 @@
+[
+       {
+              "name": "Milling Complete",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "With a satisfying rattle, you note that the milling is complete",
+                            "type": "startOfLine"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Millings count",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^You take (\\d+|a) (\\w+) ink(?:s)? from (.+)\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Gag milling",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "Alias \"milling\" will now execute:",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "You must regain balance first.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "^You put (.+) mill.",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "Carefully closing the lid on an oaken mill,",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "^There are no more (\\w+) inks there\\.$",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "Gaining momentum, you turn the handle on an oaken mill faster,",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "You give the handle a final turn before folding it back,",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "An oaken mill doesn't contain that.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "^There are no more .+ there.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Balance Recovery Milling",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "You have recovered balance on all limbs.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "out of reagents",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "Your mill does not hold the required amount of reagents to mill that.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": ""
+       }
+]

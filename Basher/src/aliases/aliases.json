@@ -1,0 +1,44 @@
+[
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Hunting Toggle",
+              "regex": "^hunt$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Priority Display",
+              "regex": "^huntprio\\s?(.+)?$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "manually add a target",
+              "regex": "^addtar$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Hunting Targets Export",
+              "regex": "^bashexport$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Hunting Targets Import",
+              "regex": "^bashimport$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Ignore Mobs",
+              "regex": "^bignore (.+)$",
+              "script": ""
+       }
+]

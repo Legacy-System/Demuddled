@@ -1,0 +1,51 @@
+[
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Gold Add and sub",
+              "regex": "^(gadd|gsub)\\s(\\d+)$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Split the gold",
+              "regex": "^gsplit$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Set your Container",
+              "regex": "^gpack (.+)$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Full Reset",
+              "regex": "^greset$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Toggle Tracking",
+              "regex": "^gtrack$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Add remove people from your group",
+              "regex": "^(add|remove) (\\w+) (to|from) group$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Show gold",
+              "regex": "^gshow$",
+              "script": ""
+       }
+]

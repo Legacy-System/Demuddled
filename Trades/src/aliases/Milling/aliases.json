@@ -1,0 +1,23 @@
+[
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Milling Start",
+              "regex": "^mill$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Queue Inks to be milled",
+              "regex": "^mill\\s?(\\d+)\\s?(red|green|gold|black|blue|yellow|purple)$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Milling Stop",
+              "regex": "^millstop$",
+              "script": ""
+       }
+]

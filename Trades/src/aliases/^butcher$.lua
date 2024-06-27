@@ -1,0 +1,1 @@
+send("wield cleaver shield;butcher corpse for reagent")

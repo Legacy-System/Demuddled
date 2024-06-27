@@ -1,0 +1,51 @@
+[
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Attack set",
+              "regex": "^battack (.+)$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Set Non-rage Shield break",
+              "regex": "^bshield (.+)$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Bashing prealias",
+              "regex": "^pre\\s(.+)$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Flee",
+              "regex": "^bflee\\s?(\\d+)?$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Config Display",
+              "regex": "^bconfig$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Legacy Basher current settings",
+              "regex": "^lbasher$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Toggle using Rage",
+              "regex": "^brage$",
+              "script": ""
+       }
+]

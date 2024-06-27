@@ -1,0 +1,16 @@
+[
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "queue inscribing",
+              "regex": "^inscribe (\\d+) (\\w+)$",
+              "script": ""
+       },
+       {
+              "isActive": "yes",
+              "isFolder": "no",
+              "name": "Start sketching the queue",
+              "regex": "^inscribe$",
+              "script": ""
+       }
+]

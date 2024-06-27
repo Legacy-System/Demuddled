@@ -1,0 +1,74 @@
+[
+       {
+              "name": "Finished inking",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^You have successfully inscribed the image of (.+) on your Tarot card\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "gags",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Wisely preparing yourself beforehand, you lay out the quill and various inks you will need to inscribe the sign of the \\w+ into your card\\.$",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "Focusing your mind on the task ahead, you block out all extraneous thoughts.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "^You take up the quill and begin to trace the outline of .+ with careful precision. The slightest mistake will render the card useless\\.$",
+                            "type": "regex"
+                     },
+                     {
+                            "pattern": "Finishing the outline,",
+                            "type": "startOfLine"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Decklist rewrite",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^You shuffle (\\d+) cards with the image of (?:the)?\\s?(\\w+) into your deck, bringing the total stored to (\\d+)\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       }
+]

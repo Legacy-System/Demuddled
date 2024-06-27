@@ -1,0 +1,90 @@
+[
+       {
+              "name": "Common Hunting Gags",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "I see no \"gold\" to take.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "You hold no \"gold\".",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "You are already wielding",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "You must regain equilibrium first.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "You must regain balance first.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "You have not lost your composure.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "Alias \"basher\" will now execute:",
+                            "type": "startOfLine"
+                     },
+                     {
+                            "pattern": "[Rage]:",
+                            "type": "startOfLine"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Queued True",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^\\[System\\]: Added .+ to your \\w+ queue\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": ""
+       },
+       {
+              "name": "Queued False",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "[System]: Running queued ",
+                            "type": "startOfLine"
+                     }
+              ],
+              "script": ""
+       }
+]
